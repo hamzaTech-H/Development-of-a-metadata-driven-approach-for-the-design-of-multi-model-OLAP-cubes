@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>History</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+ background-color:white
+}</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>1071</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QTableView QTableCornerButton::section {
+    background: blue;
+    border: 2px outset red;
+}
+QTableView::indicator:unchecked {
+    background-color: #d7d6d5
+}
+
+QHeaderView::section {
+    background-color: #F0F0F0;
+    color: #000000;
+    font-weight: bold;
+    border: 1px solid #CCCCCC;
+    padding: 4px;
+}
+
+</string>
+   </property>
+   <property name="sortingEnabled">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>340</number>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>100</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>40</number>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>25</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Graph name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Structure</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Download script</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="searchLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>1071</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #F0F0F0;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border-color: #00AAFF;
+}
+</string>
+   </property>
+   <property name="placeholderText">
+    <string>Search by name ....</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
